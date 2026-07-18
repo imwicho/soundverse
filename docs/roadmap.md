@@ -38,7 +38,7 @@ Crear una versión navegable de SoundVerse con datos simulados.
 
 - Página de inicio.
 - Navegación principal.
-- Feed musical.
+- Módulo social secundario de momentos musicales
 - Tarjeta de publicación.
 - Selector visual de emoción.
 - Página de explorar.
