@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SoundVerse | Tu música cuenta tu historia",
+  title: "SoundVerse | Diario musical para tus emociones",
   description:
-    "Una red social musical para expresar emociones, guardar recuerdos y conectar mediante canciones.",
+    "Un espacio personal para expresar emociones, guardar recuerdos y conectar mediante canciones.",
 };
 
 export default function RootLayout({

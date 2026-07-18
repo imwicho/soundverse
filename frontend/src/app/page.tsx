@@ -1,54 +1,60 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-violet-950 px-6 py-10 text-white sm:px-10">
-      <div className="mx-auto flex max-w-5xl flex-col gap-16">
-        <header className="flex items-center justify-between">
-          <p className="text-xl font-semibold tracking-tight">SoundVerse</p>
-          <span className="rounded-full border border-violet-300/40 px-3 py-1 text-sm text-violet-100">
-            Música y emociones
-          </span>
-        </header>
+    <main className="min-h-screen bg-background px-6 py-12 text-text-primary sm:px-10">
+      <section className="mx-auto max-w-3xl">
+        <p className="text-sm font-semibold tracking-[0.18em] text-brand-secondary uppercase">
+          SoundVerse
+        </p>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+          Sistema visual inicial
+        </h1>
+        <p className="mt-4 max-w-2xl text-base leading-7 text-text-secondary sm:text-lg">
+          Una muestra temporal para validar colores, superficies, tipografía y
+          estados de interacción.
+        </p>
 
-        <section className="grid items-center gap-12 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-sm font-medium tracking-[0.2em] text-violet-200 uppercase">
-              Tu espacio musical
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          <div className="rounded-lg border border-border-subtle bg-surface-1 p-5">
+            <p className="text-sm font-semibold">Superficie 1</p>
+            <p className="mt-2 text-sm leading-6 text-text-muted">
+              Contenido principal sobre el fondo oscuro.
             </p>
-            <h1 className="max-w-xl text-5xl font-semibold tracking-tight sm:text-6xl">
-              Tu música cuenta tu historia.
-            </h1>
-            <p className="mt-6 max-w-lg text-lg leading-8 text-violet-100">
-              Expresa lo que sientes, guarda los recuerdos que viven en una
-              canción y conecta con personas que escuchan el mundo como tú.
+          </div>
+          <div className="rounded-lg border border-border-subtle bg-surface-2 p-5">
+            <p className="text-sm font-semibold">Superficie 2</p>
+            <p className="mt-2 text-sm leading-6 text-text-muted">
+              Un nivel adicional de profundidad visual.
             </p>
-            <button className="mt-8 rounded-full bg-white px-6 py-3 font-medium text-violet-950 transition-colors hover:bg-violet-100">
-              Explorar emociones
+          </div>
+          <div className="rounded-lg border border-border-subtle bg-surface-3 p-5">
+            <p className="text-sm font-semibold">Superficie 3</p>
+            <p className="mt-2 text-sm leading-6 text-text-muted">
+              Contraste gradual sin depender de sombras.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-border-subtle bg-surface-1 p-6 sm:p-8">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Jerarquía y acciones
+          </h2>
+          <p className="mt-3 max-w-xl leading-7 text-text-secondary">
+            El morado guía la acción principal; el naranja se reserva para
+            acentos que aportan energía.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <button className="min-h-11 rounded-md bg-brand-primary px-5 py-3 font-semibold text-background transition-colors hover:bg-brand-primary-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring">
+              Acción principal
+            </button>
+            <button className="min-h-11 rounded-md border border-border-subtle bg-surface-2 px-5 py-3 font-semibold text-text-primary transition-colors hover:bg-surface-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring">
+              Acción secundaria
             </button>
           </div>
-
-          <article className="rounded-3xl bg-white p-6 text-violet-950 shadow-2xl shadow-violet-950/40 sm:p-8">
-            <p className="text-sm font-medium text-violet-600">Ahora suena</p>
-            <div className="mt-6 flex items-center gap-4">
-              <div className="flex size-16 items-center justify-center rounded-2xl bg-violet-200 text-2xl">
-                ♫
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold">Midnight City</h2>
-                <p className="text-violet-700">M83</p>
-              </div>
-            </div>
-            <div className="mt-8 border-t border-violet-100 pt-6">
-              <span className="rounded-full bg-violet-100 px-3 py-1 text-sm font-medium text-violet-700">
-                Nostalgia
-              </span>
-              <p className="mt-4 text-lg leading-7 text-violet-900">
-                “Hay canciones que guardan una versión de nosotros que todavía
-                queremos recordar.”
-              </p>
-            </div>
-          </article>
-        </section>
-      </div>
+          <p className="mt-5 text-sm text-text-muted">
+            Usa la tecla Tab para comprobar el foco visible de ambos botones.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
